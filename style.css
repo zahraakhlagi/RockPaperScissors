@@ -1,0 +1,576 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(29, 29, 61);
+}
+header{
+    background:#2c3461 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s;
+    z-index: 1000;
+
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .nav{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background-color: rgb(110, 194, 209);
+    color: black;
+    box-shadow: 0 0 10px rgb(110, 194, 209);
+}
+header .action .searchBox {
+    padding: 5px;
+    margin:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+header .action .searchBox i{
+    font-size: 1em;
+    margin: 5px;
+    color: #21284d;
+}
+header .action .searchBox input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #21284d;
+}
+/*Banner*/
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .card{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner .card .content{
+    width: 50%;
+    height: 100%;
+
+}
+.banner .card .content h2{
+    font-size: 3em;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.banner .card .content p{
+    font-size: 1em;
+    color: aliceblue;
+    letter-spacing: 1px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.banner .card .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 30px 0;
+    border: 1px solid rgb(110, 194, 209);
+    text-decoration: none;
+    font-size: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.banner .card .content a:hover{
+    background-color: rgb(110, 194, 209);
+    border: none;
+    color: #21284d;
+    box-shadow: 0 0 10px rgb(110, 194, 209);
+}
+.banner .card img{
+    width: 600px;
+}
+/*About*/
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+.about .card-about{
+    width: 50%;
+    margin: 20px;
+}
+.about .card-about h2{
+    font-size: 3em;
+    color: #fff;
+}
+.about .card-about p{
+    max-width: 500px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.about .card-about a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 30px 0;
+    border: 1px solid rgb(110, 194, 209);
+    text-decoration: none;
+    font-size: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.about .card-about a:hover{
+    background-color: rgb(110, 194, 209);
+    border: none;
+    color: #21284d;
+    box-shadow: 0 0 10px rgb(110, 194, 209);
+}
+.about img{
+    width: 400px;
+    height: 450px;
+    border-radius: 20px;
+
+    
+}
+.game{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+.game h2{
+    color: #fff;
+    margin: 30px;
+}
+.game .card-game img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.game .card-game .line{
+    position: relative;
+    height: 10px;
+    width: 60%;
+    background-color: #4d5274;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    transition: width 2s;
+    transition-timing-function: cubic-bezier(1,0,0.5,1);
+}
+.game .card-game .line:hover{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: hsl(187, 75%, 73%);
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(1);
+    transition: width 2s;
+
+    transition-timing-function: cubic-bezier(1,0,0.5,1);
+
+}
+.game .card-game .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game .card-game .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid rgb(110, 194, 209);
+    text-decoration: none;
+    font-size: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    
+}
+.game .card-game .content a:hover{
+    background-color: rgb(110, 194, 209);
+    border: none;
+    color: #21284d;
+    box-shadow: 0 0 10px rgb(110, 194, 209);
+
+}
+/*contact*/
+.contact{
+    padding: 20px 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.contact .form{
+    width: 50%;
+    margin: 30px;
+}
+.contact .form h2{
+    color: #fff;
+}
+.contact .form .inputBox{
+    margin: 15px 0;
+}
+.contact .form .inputBox p{
+    color: #fff;
+
+}
+.contact .form .inputBox input,
+.contact .form .inputBox textarea{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(70, 64, 92);
+    font-size: 1em;
+
+}
+.contact .form .inputBox textarea{
+    height: 100px;
+}
+.contact .form .inputBox input[type="submit"]{
+
+    display: inline-block;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid hsl(194, 68%, 64%);
+    width: 150px;
+    font-weight: 700;
+    margin-left: 35%;
+    border-radius: 10px;
+
+}
+.contact .form .inputBox input[type="submit"]:hover{
+    background:hsl(194, 68%, 64%) ;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px #1aeeef;
+
+}
+/*footer*/
+footer{
+    padding: 10px 100px;
+}
+footer .info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .info .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+footer .info p{
+    color: aliceblue;
+}
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .info ul li{
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1aeeef;
+    margin: 5px;
+}
+footer .info ul li:hover{
+    background: #1aeeef;
+    border: none;
+    box-shadow: 0 0 10px #1aeeef;
+}
+footer .info ul li a i{
+    color: #fff;
+    font-size: 19px;
+}
+footer .info ul li:hover a i{
+    color: black;
+}
+@media screen and  (max-width:900px){
+    header{
+        flex-direction: column;
+    }
+    .banner .card{
+        flex-direction: column;
+        top: 150px;
+    }
+    .banner .card img{
+        position: absolute;
+    }
+    .banner .card .content a {
+        margin: 30px 35%;
+    }
+
+    .banner .card .content {
+        width: 100%;
+        height: 100%;
+        background: rgb(27 33 65/50%);
+        z-index: 990;
+        border-radius: 10px;
+    }
+    .about{
+        top: 150px;
+        font-size: 1.5rem;
+        gap: 50px;
+        margin-top: 60px;
+    }
+    .about h2 {
+        margin-bottom: 30px;
+    }
+    .about .card-about p {
+        max-width: 500px;
+        color: aliceblue;
+        text-align: start;
+    }
+    .contact {
+        padding: 20px 40px;
+    }
+    .contact .form .inputBox input[type="submit"] {
+        margin-left: 40px;
+    }
+    footer .info {
+        gap: 30px;
+    }
+}
+@media screen and  (max-width:600px){
+   
+    header .nav{
+        flex-direction: column;
+    }
+   
+    .banner {
+        top: 150px;
+    }
+    .about {
+        padding: 50px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+.about img {
+    width: 300;
+    height: 300;
+    border-radius: 20px;
+    width: 80%;
+    height: 75vh;
+}
+.game .card-game img {
+    width: 100%;
+    height: auto;
+    
+}
+.game h2{
+    margin: 30px auto;
+}
+.game .card-game .content {
+    align-items: flex-start;
+}
+.contact{
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+.contact .form .inputBox input[type="submit"] {
+    margin-left: 10px;
+}
+.contact img{
+    width: 80%;
+}
+footer .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+  
+
+
+
+
+/*
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+
+
+
+
+
+
+}
+   /* header{
+        padding: 15px 40px;
+    }
+    header .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #21284d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+
+    }
+    header .nav li{
+        margin: 20px 0;
+
+    }
+    header .nav li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .banner .card img{
+        position: absolute;
+    }
+    .banner .card .content {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgb(27 33 65 /50%);
+        padding: 20px;
+        z-index: 3;
+        border-radius: 10px;
+        margin-top: 40px;
+    
+    }*/
+
+
+
+
+
+
+    /*.banner .card .content{
+        width: 100%;
+        height: 100%;
+        background: rgb(27 33 65/ 50%);
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+
+    }*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.game .card-game .line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: #4d5274;
+    margin-bottom: 15px;
+    border-radius: 10px;
+   /* transform: scaleX(0);
+    transform-origin: left ;
+    animation: animate 5s cubic-bezier(1,0,0.5,1);
+    cursor: pointer;
+}
+.game .card-game .line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background: #1aeeef;
+    box-shadow: 0 0 10px #1aeeef;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left ;
+    animation: animate 5s cubic-bezier(1,0,0.5,1);
+    cursor: pointer;
+}
+@keyframes animate{
+    100%{
+        transform:scaleX(1);
+    }
+}*/

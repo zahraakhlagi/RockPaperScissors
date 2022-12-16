@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>RockPapperSicssors</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">OnlineGame</a>
+        <ul class="nav">
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Games</a></li>
+            <li><a href="#">Rule</a></li>
+            <li><a href="index.html">Contact</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBox">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games">
+                <div class="Menu"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Rock Papper Sicssors</h1>
+        <div class="container">
+            <button onclick="check('rock')"><img src="./img/rock-removebg-preview (1).png" alt="rock"></button>
+            <button onclick="check('paper')"><img src="./img/paper-removebg-preview.png" alt="paper"></button>
+            <button onclick="check('scissors')"><img src="./img/scissors-removebg-preview.png" alt="scissors"></button>
+        </div>
+        <div id="result">
+            <div id="playerscore"> Your Score :0</div>
+            <p id="resultPro"></p>
+            <div id="computerScore">PC Score:0</div>
+        </div>
+    </main>
+
+    <script src="game.js"></script>
+    
+</body>
+</html>

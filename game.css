@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(29, 29, 61);
+}
+header{
+    background:#2c3461 ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .5s;
+    z-index: 1000;
+
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+header .nav{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background-color: rgb(110, 194, 209);
+    color: black;
+    box-shadow: 0 0 10px rgb(110, 194, 209);
+}
+header .action .searchBox {
+    padding: 5px;
+    margin:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+header .action .searchBox i{
+    font-size: 1em;
+    margin: 5px;
+    color: #21284d;
+}
+header .action .searchBox input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #21284d;
+}
+/*Main*/
+main{
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+}
+main h1{
+    margin: 20px auto;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+main button{
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    transition: .5s;
+    
+}
+img{
+    width: 100px;
+    height: 150px;
+}
+main button:hover{
+    background-color: aqua;
+    box-shadow: 0 0 10px rgb(110, 194, 209);
+}
+img:hover{
+    width: 130px;
+    height: 170px;
+}
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 30px auto;
+
+}
+#result #playerscore{
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#result #resultPro{
+    font-size: 1.5em;
+
+}
+#result #computerScore{
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+@media screen and  (max-width:900px){
+
+    header{
+        flex-direction: column;
+    }
+}
+@media screen and  (max-width:600px){
+   
+
+    header .nav{
+        flex-direction: column;
+    }
+    main{
+        top: 400px;
+    }
+    main h1{
+        margin: auto;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+}
